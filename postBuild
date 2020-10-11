@@ -1,12 +1,2 @@
 #!/bin/bash
-wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && dpkg -i erlang-solutions_2.0_all.deb
-git clone https://github.com/erlang/otp.git
-cd otp
-./otp_build autoconf
-./configure
-make
-make install
-cd ..
-git clone https://github.com/elixir-lang/elixir.git
-cd elixir
-make clean test
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
